@@ -1,3 +1,5 @@
+import Ingredients.*;
+
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public Dough createDough() {

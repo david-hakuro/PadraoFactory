@@ -1,3 +1,5 @@
+import Ingredients.*;
+
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
@@ -28,6 +30,6 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Clam createClam() {
-        return FreshClam();
+        return new FreshClam();
     }
 }

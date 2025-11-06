@@ -1,4 +1,4 @@
-import PizzaIngredients.Dough;
+import Ingredients.*;
 
 public abstract class Pizza {
     String name;
@@ -14,20 +14,25 @@ public abstract class Pizza {
     void bake() {
         System.out.println("Assar por 25 minutos a 350º");
     }
+
     void cut() {
         System.out.println("Cortar a pizza em fatias diagonais");
     }
+
     void box() {
         System.out.println("Colocar a pizza na caixa oficial da pizzaria");
     }
-    void setName(String name){
+
+    void setName(String name) {
         this.name = name;
     }
-    String getName(){
+
+    String getName() {
         return name;
     }
+
     @Override
     public String toString() {
-        System.out.printf("Name: %s\n, ", name);
+        return name;
     }
 }
